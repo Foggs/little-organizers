@@ -1,4 +1,4 @@
-/*!
+/*/
  * Start Bootstrap - Stylish Portfolio (http://startbootstrap.com/)
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
@@ -15,22 +15,21 @@ body {
 
 body {
     font-family: 'Open Sans', sans-serif;
+     position: relative;
 }
 
-h2 {
+h2,h3,h4 {
     font-family: 'Open Sans Condensed', sans-serif;
     margin-bottom: 1.5em;
     margin-top: 0;
-    line-height: 1.5;
 }
+
+h3 { line-height: 1.5 }
+
 
 h4 {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: 100;
-    font-size: 1.5em;
+    /*font-weight: 100;*/
     color: #303030;
-    margin-bottom: 1.5em;
-    margin-top: 0;
     line-height: 2.25;
 }
 
@@ -63,7 +62,7 @@ section {
 
 /* Custom Button Styles */
 
-/*.btn-dark {
+.btn-dark {
     border-radius: 0;
     color: #fff;
     background-color: rgba(0,0,0,0.4);
@@ -87,7 +86,7 @@ section {
 .btn-light:active {
     color: #333;
     background-color: rgba(255,255,255,0.8);
-}*/
+}
 
 /* Custom Horizontal Rule */
 
@@ -98,6 +97,10 @@ hr.small {
 
 .jumbotron {
     background-color: rgba(34,106,103,.2)/*#679C9A*/
+}
+
+#top > div > h2 {
+    width: 75%
 }
 
 /* Header */
@@ -114,9 +117,15 @@ hr.small {
     -o-background-size: cover;*/
 }
 
+@media(min-width:768px) {
+    #top > div > img.hidden-xs {
+        margin: 8em auto 0;
+    }
+}
+
 .header  > div > img {
     width: 80%;
-    margin: 8em auto 0;
+    margin: 3em auto 0;
 }
 
 header#top > div > a {
@@ -128,24 +137,36 @@ header#top > div > a {
 
 
 /* About */
+@media(min-width:768px) {
+
+    #about > div > div:nth-child(1) > div.col-md-3 > img {
+        position: absolute;
+        top: 20%;
+        left: 25%;
+        height: 12em;
+        width: 12em;
+    }
+
+    #about svg {
+        font-size: 5em;
+        color: #CBEB89; /*#044E00*/
+    }
+
+    #about > div > div:nth-child(1) > div.col-md-9.text-left > svg {
+        position: absolute;
+        left: 83%;
+        top: 60%;
+    }
+}
+
 #about > div > div:nth-child(1) > div.col-md-3 > img {
-    position: absolute;
-    top: 20%;
-    left: 25%;
-    height: 12em;
-    width: 12em;
+    position: relative;
+    height: 8em;
+    width: 8em;
+    margin-bottom: 1em
 }
 
-#about svg {
-    font-size: 5em;
-    color: #CBEB89; /*#044E00*/
-}
 
-#about > div > div:nth-child(1) > div.col-md-9.text-left > svg {
-    position: absolute;
-    left: 83%;
-    top: 60%;
-}
 
 #about > div > div:nth-child(2) {
     margin-top: 3em;
@@ -294,3 +315,6 @@ footer > div > div > div > p.text-muted {
   bottom: 5px;
   right: 5px;
 }
+
+/* FORM */
+#success_message{ display: none;}

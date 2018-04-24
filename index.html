@@ -9,7 +9,9 @@
     <meta name="author" content="">
     <title>Little Organizers:Home</title>
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
     <!-- Custom Fonts -->
@@ -28,34 +30,40 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Welcome to Little Organizers</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#">home</a></li>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#services">services</a></li>
-                    <li><a href="#guarantee">guarantee</a></li>
-                    <li><a href="#contact">contact</a></li>
-                </ul>
-            </div>
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Welcome</a>
         </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">home <span class="sr-only">(current)</span></a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#guarantee">guarantee</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
     </nav>
     <!-- Header -->
     <section class="jumbotron">
         <header id="top" class="header">
             <div class="text-vertical-center">
                 <!-- <h1>Welcome to Little Organizers!</h1> -->
-                <img class="img-responsive" src="./img/images/logo.png" alt="little organizers logo">
-                <h2>
-                   Little Organizers offers professional organization for every room, closet, cabinet <br/>and drawer including garage, attic, playroom and basement!
+                <img class="visible-xs-block img-responsive" src="./img/images/logo_stacked.png" alt="little organizers logo">
+                <img class="hidden-xs img-responsive" src="./img/images/logo.png" alt="little organizers logo">
+
+                <h2 class="center-block col-md-6">
+                   Little Organizers offers professional organization for every room, closet, cabinet and drawer including garage, attic, playroom and basement!
                </h2>
                 <a href="#services" class="btn btn-lg">show me more! <i class="fas fa-boxes"></i></a>
             </div>
@@ -67,14 +75,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-left hidden-xs"></i>
                     <img class="img-responsive center-block img-circle" src="./img/annmarie-cropped.jpg" alt="Picture of Annmarie Little">
                 </div>
                 <div class="col-md-9 text-left">
-                    <h4>
+                    <h3>
                         Hi my name is Ann Marie Little. I have been a little organizer ever since I was a kid growing up in New York and Pennsylvania. As a child, I found great comfort in things being orderly so I often found myself organizing every room, drawer, cabinet, and closet &ndash;<span>not only my house but my friends' houses also</span>!
-                    </h4>
-                    <i class="fas fa-quote-right"></i>
+                    </h3>
+                    <i class="fas fa-quote-right hidden-xs"></i>
                     <!-- <button class="btn btn-default btn-lg">Read more</button> -->
                 </div>
             </div>
@@ -89,7 +97,7 @@
                     </p>
                 </div>
                 <div class="col-md-7">
-                    <img class="img-responsive img-thumbnail" src="./img/images/background-2.jpg" alt="annmarie">
+                    <img class="img-responsive img-thumbnail" src="./img/images/background-2.jpg" alt="illustration of clean shelves">
                 </div>
             </div>
             <div class="row">
@@ -127,7 +135,7 @@
             <div class="row text-center">
                     <!-- <hr class="small">-->
                     <div class="row">
-                        <div class="col-md-4 col-sm-6">
+                        <div class="col-xs-6 col-md-4">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                     <!-- <i class="fa fa-circle fa-stack-2x"></i> -->
@@ -141,7 +149,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-sm-6">
+                        <div class="col-xs-6 col-md-4">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                     <!--<i class="fa fa-circle fa-stack-2x"></i>-->
@@ -155,7 +163,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-sm-6">
+                        <div class="col-xs-6 col-md-4">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                     <!-- <i class="fa fa-circle fa-stack-2x"></i>
@@ -169,10 +177,9 @@
                                 <a href="#" class="btn btn-light hidden">Learn More</a>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6">
+
+                        <div class="col-xs-6 col-md-4">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                     <!-- <i class="fa fa-circle fa-stack-2x"></i>
@@ -187,7 +194,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-sm-6">
+                        <div class="col-xs-6 col-md-4">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                     <!-- <i class="fa fa-circle fa-stack-2x"></i>
@@ -202,7 +209,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-sm-6">
+                        <div class="col-xs-6 col-md-4">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                         <!-- <i class="fa fa-circle fa-stack-2x"></i>
@@ -216,10 +223,9 @@
                                 <a href="#" class="btn btn-light hidden">Learn More</a>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6">
+                        <div class="clearfix"></div>
+                        <div class="col-xs-6 col-md-4">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                        <!--  <i class="fa fa-circle fa-stack-2x"></i>
@@ -234,7 +240,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-sm-6">
+                        <div class="col-xs-6 col-md-4">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                         <!-- <i class="fa fa-circle fa-stack-2x"></i>
@@ -250,7 +256,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-sm-6">
+                        <div class="col-xs-6 col-md-4">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                     <!-- <i class="fa fa-circle fa-stack-2x"></i>
@@ -265,10 +271,9 @@
                                 <a href="#" class="btn btn-light hidden">Learn More</a>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-md-4 col-md-offset-2 col-sm-6">
+
+                        <div class="col-xs-6 col-md-4 col-md-offset-2">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                     <!-- <i class="fa fa-circle fa-stack-2x"></i>
@@ -282,7 +287,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-sm-6">
+                        <div class="col-xs-12 col-md-4">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                     <!-- <i class="fa fa-circle fa-stack-2x"></i>
@@ -297,7 +302,6 @@
                                 <a href="#" class="btn btn-light hidden">Learn More</a>
                             </div>
                         </div>
-                    </div>
                 </div>
                 <!-- /.col-md-10 -->
             </div>
@@ -381,32 +385,76 @@
         <!-- Container (Contact Section) -->
         <div class="container">
             <div class="row">
-                <h2 class="text-center">Contact</h2>
+                <h2 class="text-center">Contact Us</h2>
             </div>
             <div class="row">
-                <div class="col-sm-5">
+                <div class="col-md-5">
                     <p>Contact us and we'll get back to you ASAP.</p>
-                    <p><span class="glyphicon glyphicon-map-marker"></span> Bayport, US</p>
+                    <p><span class="glyphicon glyphicon-map-marker"></span> Bayport, NY</p>
                     <p><span class="glyphicon glyphicon-phone"></span> (516) 521-7325</p>
                     <p><span class="glyphicon glyphicon-envelope"></span> info@littleorganizers.com</p>
                 </div>
-                <div class="col-md-7 slideanim">
-                    <div class="row">
-                        <div class="col-sm-6 form-group">
-                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-                        </div>
-                        <div class="col-sm-6 form-group">
-                            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-                        </div>
-                    </div>
-                    <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5">
-                    </textarea>
-                    <br>
-                    <div class="row">
-                        <div class="col-sm-12 form-group">
-                            <button class="btn btn-default" type="submit">Send</button>
-                        </div>
-                    </div>
+
+                <div class="col-md-7">
+
+                  <form id="contact-form" method="post" action="contact.php" role="form">
+
+                      <div class="messages"></div>
+
+                      <div class="controls">
+
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <div class="form-group">
+                                      <label for="form_name">Firstname *</label>
+                                      <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                      <div class="help-block with-errors"></div>
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="form-group">
+                                      <label for="form_lastname">Lastname *</label>
+                                      <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                      <div class="help-block with-errors"></div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <div class="form-group">
+                                      <label for="form_email">Email *</label>
+                                      <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                      <div class="help-block with-errors"></div>
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="form-group">
+                                      <label for="form_phone">Phone</label>
+                                      <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                                      <div class="help-block with-errors"></div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <div class="form-group">
+                                      <label for="form_message">Message *</label>
+                                      <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                      <div class="help-block with-errors"></div>
+                                  </div>
+                              </div>
+                              <div class="col-md-12">
+                                  <input type="submit" class="btn btn-success btn-send" value="Send message">
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <p class="text-muted"><strong>*</strong> These fields are required.</p>
+                              </div>
+                          </div>
+                      </div>
+
+                  </form>
                 </div>
             </div>
         </div>
@@ -445,10 +493,13 @@
         <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
     </footer>
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- Custom JavaScript -->
+    <script src="js/form.js"></script>
     <script src="js/main.js"></script>
 
 </body>
