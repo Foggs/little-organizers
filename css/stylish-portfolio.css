@@ -20,8 +20,8 @@ body {
 
 h2,h3,h4 {
     font-family: 'Open Sans Condensed', sans-serif;
-    margin-bottom: 1.5em;
-    margin-top: 0;
+    /*margin-bottom: 1.5em;
+    margin-top: 0;*/
 }
 
 h3 { line-height: 1.5 }
@@ -60,33 +60,7 @@ section {
     font-weight: 700;
 }
 
-/* Custom Button Styles */
 
-.btn-dark {
-    border-radius: 0;
-    color: #fff;
-    background-color: rgba(0,0,0,0.4);
-}
-
-.btn-dark:hover,
-.btn-dark:focus,
-.btn-dark:active {
-    color: #fff;
-    background-color: rgba(0,0,0,0.7);
-}
-
-.btn-light {
-    border-radius: 0;
-    color: #333;
-    background-color: rgb(255,255,255);
-}
-
-.btn-light:hover,
-.btn-light:focus,
-.btn-light:active {
-    color: #333;
-    background-color: rgba(255,255,255,0.8);
-}
 
 /* Custom Horizontal Rule */
 
@@ -96,85 +70,80 @@ hr.small {
 
 
 .jumbotron {
-    background-color: rgba(34,106,103,.2)/*#679C9A*/
+    background-color: rgba(34,106,103,.2) /*#679C9A*/
 }
 
-#top > div > h2 {
-    width: 75%
-}
 
 /* Header */
 
-.header {
+/*.header {
     display: table;
     position: relative;
     width: 100%;
     height: 100%;
-   /* background: url(../img/images/logo.png) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;*/
-}
 
-@media(min-width:768px) {
-    #top > div > img.hidden-xs {
-        margin: 8em auto 0;
-    }
-}
+}*/
 
-.header  > div > img {
+#header > div > h2 { margin: 0 5% 5%;}
+
+
+#header  > div > img {
     width: 80%;
     margin: 3em auto 0;
 }
 
-header#top > div > a {
+#header > div > a {
     background-color: #851518;
     color: #fff;
     font-size: 2em;
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
+#header > div > h2 { margin-bottom: 1em }
+
+@media(min-width:768px) {
+    #header > div > img.hidden-xs {
+        margin: 8em auto 0;
+    }
+}
+
 
 /* About */
-@media(min-width:768px) {
-
-    #about > div > div:nth-child(1) > div.col-md-3 > img {
-        position: absolute;
-        top: 20%;
-        left: 25%;
-        height: 12em;
-        width: 12em;
-    }
-
-    #about svg {
-        font-size: 5em;
-        color: #CBEB89; /*#044E00*/
-    }
-
-    #about > div > div:nth-child(1) > div.col-md-9.text-left > svg {
-        position: absolute;
-        left: 83%;
-        top: 60%;
-    }
-}
-
-#about > div > div:nth-child(1) > div.col-md-3 > img {
-    position: relative;
+#about > div > div:nth-child(1) > div.col-sm-4 > img {
     height: 8em;
     width: 8em;
-    margin-bottom: 1em
+    margin-bottom: 1em;
+    border: 3px solid #FFF;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+    border-radius: 100%;
 }
 
+@media(min-width:768px) {
+    #about > div > div:nth-child(1) > div.col-sm-4 > img {
+        position: absolute;
+        height: auto;
+        width: 100%;
+    }
+    #about svg {
+        font-size: 5em;
+        color: #CBEB89;
+        opacity: .5
+    }
+    #about h3 {line-height: 2}
+    #about > div > div:nth-child(2) {
+        margin-top: 3em;
+    }
+    #about > div > div:nth-child(1) > div.col-xs-6.col-sm-4 {
+        margin: 0 5% 0 -5%
+    }
 
-
-#about > div > div:nth-child(2) {
-    margin-top: 3em;
-}
-
-#about > div > div:nth-child(2) > div.col-md-5.text-left > p,
-#about > div > div:nth-child(3) > div > p {
-    margin-bottom: 2em
+    #about > div > div:nth-child(2) > div.col-md-5.text-left > p,
+    #about > div > div:nth-child(3) > div > p {
+        margin-bottom: 2em
+    }
+    #about > div > div:nth-child(1) > div.col-sm-1.hidden-xs.pull-right {
+        margin: -5% 12%  0 0;
+    }
 }
 
 /* Services */
@@ -199,13 +168,13 @@ header#top > div > a {
     text-decoration: underline;
 }
 
-#service-icons .fa-stack{ height:1.5em }
+#service-icons .fa-stack{ height: auto }
 
-#service-icons .fa-stack{ height:1.5em }
+/*#service-icons .fa-stack{ height:1.5em }
  > div > div > div > p {
     margin-bottom: 1em;
     color: #fff;
-}
+}*/
 
 #service-icons .service-item > h4 {
     color: #fff;
@@ -222,12 +191,17 @@ header#top > div > a {
 
 
 #service-icons svg {
-    color: #fff
+    color: #fff;
+    font-size: .75em
 }
 
 .service-item {
     margin-bottom: 2em;
 }
+@media(min-width:768px) {
+
+}
+
 
 .navbar {
     background-color: #044601
