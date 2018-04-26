@@ -60,8 +60,6 @@ section {
     font-weight: 700;
 }
 
-
-
 /* Custom Horizontal Rule */
 
 hr.small {
@@ -84,8 +82,11 @@ hr.small {
 
 }*/
 
-#header > div > h2 { margin: 0 5% 5%;}
+#header > div > h2 { margin: 0 5%}
+@media (min-width: 1200px) {
+    #header > div > h2 { margin: 0 20%}
 
+}
 
 #header  > div > img {
     width: 80%;
@@ -110,8 +111,6 @@ hr.small {
 
 /* About */
 #about > div > div:nth-child(1) > div.col-sm-4 > img {
-    height: 8em;
-    width: 8em;
     margin-bottom: 1em;
     border: 3px solid #FFF;
     box-shadow: 0 1px 2px rgba(0,0,0,0.4);
@@ -120,7 +119,6 @@ hr.small {
 
 @media(min-width:768px) {
     #about > div > div:nth-child(1) > div.col-sm-4 > img {
-        position: absolute;
         height: auto;
         width: 100%;
     }
@@ -178,7 +176,8 @@ hr.small {
 
 #service-icons .service-item > h4 {
     color: #fff;
-    line-height: 1.2
+    line-height: 1.2;
+    font-size: 1em
 }
 
 #service-icons {
@@ -189,7 +188,6 @@ hr.small {
     margin-top: 3em
 }
 
-
 #service-icons svg {
     color: #fff;
     font-size: .75em
@@ -198,8 +196,11 @@ hr.small {
 .service-item {
     margin-bottom: 2em;
 }
-@media(min-width:768px) {
 
+@media(min-width:768px) {
+    #service-icons .service-item > h4  {
+        font-size: 1.125em
+    }
 }
 
 
@@ -211,12 +212,17 @@ hr.small {
     color: #fff
 }
 
-.nav>li>a:focus, .nav>li>a:hover {
+.nav>li>a:focus,
+.nav>li>a:hover {
     background-color: transparent;
 }
 
-li.active {
+.navbar-inverse .navbar-nav>.active>a {
     background-color: #5BAB57;
+}
+
+#myNavbar > ul > li > a {
+    color: #fff;
 }
 
 
@@ -281,6 +287,11 @@ footer > div > div > div > h4 {
 
 footer > div > div > div > p.text-muted {
     font-size: 1em
+}
+
+#contact h2,
+#contact-form  label {
+    color: #fff
 }
 
 #to-top {

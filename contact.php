@@ -10,7 +10,7 @@ $from = 'Demo contact form <info@littleorganizers.com>';
 $sendTo = 'Demo contact form <annmarielittle@yahoo.com>';
 
 // subject of the email
-$subject = 'New message from contact form';
+$subject = 'New message for Little Organizers';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email

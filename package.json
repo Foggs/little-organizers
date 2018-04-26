@@ -1,0 +1,30 @@
+{
+  "name": "little-organizers",
+  "version": "1.0.0",
+  "description": "little organizers website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Foggs/little-organizers.git"
+  },
+  "author": "rfoggo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Foggs/little-organizers/issues"
+  },
+  "homepage": "https://github.com/Foggs/little-organizers#readme",
+  "dependencies": {
+    "autoprefixer": "^8.3.0",
+    "bootstrap": "^4.1.0",
+    "gulp": "^3.9.1",
+    "gulp-environments": "^0.1.2",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "mq4-hover-shim": "^0.3.0",
+    "rimraf": "^2.6.2"
+  }
+}
