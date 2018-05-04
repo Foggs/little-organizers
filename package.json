@@ -17,14 +17,17 @@
   },
   "homepage": "https://github.com/Foggs/little-organizers#readme",
   "dependencies": {
-    "autoprefixer": "^8.3.0",
+    "autoprefixer": "^8.4.1",
     "bootstrap": "^4.1.0",
+    "environments": "^1.2.2",
     "gulp": "^3.9.1",
     "gulp-environments": "^0.1.2",
     "gulp-postcss": "^7.0.1",
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4",
+    "gulp-util": "^3.0.8",
     "mq4-hover-shim": "^0.3.0",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "vinyl-ftp": "^0.6.1"
   }
 }
