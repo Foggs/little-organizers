@@ -29,5 +29,9 @@
     "mq4-hover-shim": "^0.3.0",
     "rimraf": "^2.6.2",
     "vinyl-ftp": "^0.6.1"
+  },
+  "devDependencies": {
+    "gulp-changed": "^3.2.0",
+    "gulp-image-resize": "^0.13.0"
   }
 }

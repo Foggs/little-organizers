@@ -9,14 +9,20 @@ $('a[href^="#"]').on('click', function(event) {
     var target = $(this.getAttribute('href'));
     if( target.length ) {
         event.preventDefault();
-        $('html, body').stop().animate({
-            scrollTop: target.offset().top - 50
-        }, 1000);
+        $('#myNavbar ul li').each(function () {
+            $(this).removeClass("active");
+        });
+        $(this).closest( "li" ).addClass('active'); 
+        animate(target);
+        
     }
 });
 
-
-
+function animate(targ) {
+    $('html, body').stop().animate({
+        scrollTop: targ.offset().top - 50
+    }, 1000);
+}
 
 
 //#to-top button appears after scrolling

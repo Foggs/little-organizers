@@ -6,8 +6,12 @@ var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var gutil = require( 'gulp-util' );
 var ftp = require( 'vinyl-ftp' );
-var mq4HOverShim = require('mq4-hover-shim')
-var autoprefixer = require('autoprefixer')
+var mq4HOverShim = require('mq4-hover-shim');
+var autoprefixer = require('autoprefixer');
+var imageResize = require('gulp-image-resize');
+var changed = require("gulp-changed");
+
+
 
 var development = environments.development;
 var production = environments.production;
@@ -30,6 +34,14 @@ var processors = [
 
 
 /* TASKS */
+
+gulp.task("changed", function () {
+  gulp.src("./img/**/*.{jpg,png}")
+    .pipe(changed("dist"))
+    .pipe(imageResize({ width : 100 }))
+    .pipe(gulp.dest("dist"));
+});
+
 
 gulp.task('compile-sass', function(){
   return gulp.src('./scss/app.scss')

@@ -84,9 +84,9 @@ nav > div > div.navbar-header > a.navbar-brand {color: #fff}
 
 }*/
 
-#header > div > h2 { margin: 0 5%}
+#header > div > h2 { margin: 0 5% }
 @media (min-width: 1200px) {
-    #header > div > h2 { margin: 0 20%}
+    #header > div > h2 { margin: 0 20% }
 
 }
 
@@ -217,16 +217,11 @@ nav > div > div.navbar-header > a.navbar-brand {color: #fff}
     background-color: #044601
 }
 
-.navbar a {
-    color: #fff
-}
-
 .nav>li>a:focus,
 .nav>li>a:hover {
     background-color: transparent;
 }
-
-.navbar-inverse .navbar-nav>.active>a {
+#myNavbar > ul > li.active {
     background-color: #5BAB57;
 }
 
@@ -328,5 +323,13 @@ footer > div > div > div > p.text-muted {
 
 /* FORM */
 #success_message{ display: none;}
+
+.masonry-column {
+  padding: 0 1px;
+}
+
+.masonry-grid > div .thumbnail {
+  margin: 5px 1px;
+}
 
 
