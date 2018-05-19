@@ -14,7 +14,6 @@ $('a[href^="#"]').on('click', function(event) {
         });
         $(this).closest( "li" ).addClass('active'); 
         animate(target);
-        
     }
 });
 
