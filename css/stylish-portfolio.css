@@ -18,14 +18,22 @@ body {
      position: relative;
 }
 
-h2,h3,h4 {
+h1,h2,h3,h4 {
     font-family: 'Open Sans Condensed', sans-serif;
+
     /*margin-bottom: 1.5em;
     margin-top: 0;*/
 }
 
-h3 { line-height: 1.5 }
 
+
+h2 {
+    font-size: 4.0em;
+    font-weight: 700;
+}
+
+
+h3 { line-height: 1.5 }
 
 h4 {
     /*font-weight: 100;*/
@@ -56,8 +64,6 @@ section {
 .text-vertical-center h1 {
     margin: 0;
     padding: 0;
-    font-size: 4.5em;
-    font-weight: 700;
 }
 
 /* Custom Horizontal Rule */
@@ -71,6 +77,12 @@ nav > div > div.navbar-header > a.navbar-brand {color: #fff}
 
 .jumbotron {
     background-color: rgba(34,106,103,.2) /*#679C9A*/
+}
+
+.jumbotron h1 {
+    font-size: 3em;
+    font-weight: 300;
+    margin-bottom: 1em
 }
 
 
@@ -129,7 +141,15 @@ nav > div > div.navbar-header > a.navbar-brand {color: #fff}
         color: #CBEB89;
         opacity: .5
     }
-    #about h3 {line-height: 2}
+    #about h3 {
+        font-size: 2em;
+        line-height: 1.4
+    }
+    #about h3 span{
+        font-: 2em;
+        line-height: 1.4
+    }
+
     #about > div > div:nth-child(2) {
         margin-top: 3em;
     }
@@ -153,7 +173,11 @@ nav > div > div.navbar-header > a.navbar-brand {color: #fff}
     background-color: #2c8f27
 }
 
-#services button {margin: 3em 0} 
+#services button.btn{
+    background-color: #851518;
+    border-color: #851518;
+    margin: 3em 0
+}
 
 #services > div > div > h2 {
     color: #fff;
@@ -261,12 +285,24 @@ nav > div > div.navbar-header > a.navbar-brand {color: #fff}
     -o-background-size: cover;
 }
 
+/* why organize */
+
+
+#organize-copy {
+    margin: 1.875em
+}
+
+#organize-copy p {
+    margin-bottom: 2em
+}
+
 /* guarantee */
 #guarantee {
     background-color: #3D827F
 }
+
 #guarantee-copy {
-    margin: 30px 0;
+    margin: 1.875em 0;
 }
 
 #guarantee > div > div > h2.headline{
