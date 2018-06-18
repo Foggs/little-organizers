@@ -377,12 +377,19 @@ footer > div > div > div > p.text-muted {
 /* FORM */
 #success_message{ display: none;}
 
-.masonry-column {
-  padding: 0 1px;
+
+.gal {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+
+    }
+.gal img{ width: 95%; padding: 7px 0;}
+
+@media (max-width: 500px) {
+    .gal {
+        -webkit-column-count: 1; /* Chrome, Safari, Opera */
+        -moz-column-count: 1; /* Firefox */
+        column-count: 1;
+    }
 }
-
-.masonry-grid > div .thumbnail {
-  margin: 5px 1px;
-}
-
-
