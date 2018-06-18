@@ -296,6 +296,13 @@ nav > div > div.navbar-header > a.navbar-brand {color: #fff}
     margin-bottom: 2em
 }
 
+#organize h2 {
+    color: #153058
+}
+#organize h3 {
+    color: #0F4E4C
+}
+
 /* guarantee */
 #guarantee {
     background-color: #3D827F
@@ -377,6 +384,13 @@ footer > div > div > div > p.text-muted {
 /* FORM */
 #success_message{ display: none;}
 
+#before-after {
+    margin-top: 3em;
+}
+#before-after h3{
+    text-align: center;
+    margin-top: 3em
+}
 
 .gal {
     -webkit-column-count: 2; /* Chrome, Safari, Opera */
